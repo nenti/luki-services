@@ -1,6 +1,10 @@
 ---
 import content from '../content/de.json';
 const { contact } = content;
+
+const occasionLabels = Object.fromEntries(
+  contact.form.occasionOptions.map((opt) => [opt.value, opt.label])
+);
 ---
 
 <section id={contact.id} class="border-t border-sand py-20 md:py-28">
@@ -28,8 +32,12 @@ const { contact } = content;
       <form
         id="contact-form"
         class="rounded-2xl border border-sand bg-white p-6 shadow-sm md:p-8"
+        novalidate
       >
-        <div class="space-y-4">
+        <input type="hidden" name="access_key" value="fce4cefa-3271-474f-a7a8-8cf59d24a20b" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none" tabindex="-1" autocomplete="off" />
+
+        <div id="contact-form-fields" class="space-y-4">
           <div>
             <label for="name" class="block text-sm font-medium text-ink">{contact.form.name}</label>
             <input
@@ -93,9 +101,18 @@ const { contact } = content;
             ></textarea>
           </div>
         </div>
+
+        <p
+          id="contact-form-status"
+          class="mt-4 hidden rounded-lg px-4 py-3 text-sm"
+          role="status"
+          aria-live="polite"
+        ></p>
+
         <button
+          id="contact-form-submit"
           type="submit"
-          class="mt-6 w-full rounded-full bg-petrol px-8 py-3.5 font-medium text-cream transition-colors hover:bg-petrol-light sm:w-auto"
+          class="mt-6 w-full rounded-full bg-petrol px-8 py-3.5 font-medium text-cream transition-colors hover:bg-petrol-light disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
         >
           {contact.form.submit}
         </button>
@@ -104,26 +121,70 @@ const { contact } = content;
   </div>
 </section>
 
-<script define:vars={{ contactEmail: contact.email }}>
+<script define:vars={{ occasionLabels, formCopy: contact.form }}>
   const form = document.getElementById('contact-form');
-  form?.addEventListener('submit', (e) => {
+  const fields = document.getElementById('contact-form-fields');
+  const status = document.getElementById('contact-form-status');
+  const submitBtn = document.getElementById('contact-form-submit');
+
+  function showStatus(message, type) {
+    if (!status) return;
+    status.textContent = message;
+    status.classList.remove('hidden', 'bg-cream', 'text-ink-muted', 'bg-red-50', 'text-red-800', 'border', 'border-red-200');
+    if (type === 'success') {
+      status.classList.add('bg-cream', 'text-ink-muted');
+    } else {
+      status.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');
+    }
+  }
+
+  form?.addEventListener('submit', async (e) => {
     e.preventDefault();
+    if (!form || !submitBtn) return;
+
     const data = new FormData(form);
-    const occasionLabels = {
-      hochzeit: 'Hochzeit / Trauung',
-      trauer: 'Trauerfeier',
-      sonstiges: 'Sonstiges',
-    };
     const occasion = occasionLabels[data.get('occasion')] || data.get('occasion');
-    const subject = encodeURIComponent(`Anfrage: ${occasion}`);
-    const body = encodeURIComponent(
-      `Name: ${data.get('name')}\n` +
-        `E-Mail: ${data.get('email')}\n` +
-        `Anlass: ${occasion}\n` +
-        `Wunschtermin: ${data.get('date') || '–'}\n` +
-        `Ort: ${data.get('location') || '–'}\n\n` +
-        `${data.get('message')}`
-    );
-    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
+    const date = data.get('date') || '–';
+    const location = data.get('location') || '–';
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = formCopy.submitting;
+    status?.classList.add('hidden');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: data.get('access_key'),
+          name: data.get('name'),
+          email: data.get('email'),
+          subject: `Anfrage: ${occasion}`,
+          message: data.get('message'),
+          Anlass: occasion,
+          Wunschtermin: date,
+          Ort: location,
+          botcheck: data.get('botcheck'),
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || 'submit failed');
+      }
+
+      form.reset();
+      fields?.classList.add('hidden');
+      submitBtn.classList.add('hidden');
+      showStatus(formCopy.success, 'success');
+    } catch {
+      showStatus(formCopy.error, 'error');
+      submitBtn.disabled = false;
+      submitBtn.textContent = formCopy.submit;
+    }
   });
 </script>

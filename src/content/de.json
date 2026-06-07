@@ -180,7 +180,10 @@
       "date": "Wunschtermin (optional)",
       "location": "Ort (optional)",
       "message": "Ihre Nachricht",
-      "submit": "Nachricht senden"
+      "submit": "Nachricht senden",
+      "submitting": "Wird gesendet …",
+      "success": "Vielen Dank — Ihre Nachricht wurde gesendet. Ich melde mich innerhalb von 2–3 Werktagen.",
+      "error": "Leider ist etwas schiefgelaufen. Bitte schreiben Sie direkt an lukas.hetzelein@web.de."
     }
   },
   "footer": {
@@ -216,7 +219,7 @@
         },
         {
           "heading": "Kontaktaufnahme",
-          "content": "Wenn Sie per E-Mail oder Telefon Kontakt aufnehmen, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
+          "content": "Wenn Sie das Kontaktformular nutzen, werden Ihre Angaben (Name, E-Mail, Nachricht sowie optional Anlass, Termin und Ort) über den Dienst Web3Forms (web3forms.com) an lukas.hetzelein@web.de übermittelt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Anfrage) bzw. lit. f (berechtigtes Interesse an der Beantwortung). Die Daten werden nur zur Bearbeitung Ihrer Anfrage verwendet und nicht ohne Ihre Einwilligung weitergegeben.\n\nBei Kontakt per E-Mail oder Telefon gelten dieselben Grundsätze."
         },
         {
           "heading": "Hosting",
