@@ -1,0 +1,27 @@
+---
+import content from '../content/de.json';
+const { framework } = content;
+---
+
+<section id={framework.id} class="border-t border-sand bg-white py-20 md:py-28">
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="font-serif text-3xl text-ink md:text-4xl">{framework.title}</h2>
+    <p class="mt-4 text-lg text-ink-muted">{framework.subtitle}</p>
+
+    <dl class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {framework.items.map((item) => (
+        <div
+          class:list={[
+            'rounded-xl border p-6',
+            item.placeholder
+              ? 'border-dashed border-accent/40 bg-cream/50'
+              : 'border-sand bg-cream',
+          ]}
+        >
+          <dt class="font-medium text-ink">{item.title}</dt>
+          <dd class="mt-2 text-sm leading-relaxed text-ink-muted">{item.text}</dd>
+        </div>
+      ))}
+    </dl>
+  </div>
+</section>

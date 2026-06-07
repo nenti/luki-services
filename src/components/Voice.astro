@@ -1,0 +1,62 @@
+---
+import content from '../content/de.json';
+const { voice, references } = content;
+---
+
+<section id={voice.id} class="border-t border-sand py-20 md:py-28">
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="font-serif text-3xl text-ink md:text-4xl">{voice.title}</h2>
+    <p class="mt-4 max-w-xl text-lg text-ink-muted">{voice.subtitle}</p>
+
+    <div class="mt-10 grid gap-4 sm:grid-cols-2">
+      {voice.items.map((item) => (
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group rounded-xl border border-sand bg-white p-6 transition-shadow hover:shadow-md"
+        >
+          <p class="text-xs font-medium uppercase tracking-wider text-accent">{item.format}</p>
+          <h3 class="mt-2 font-serif text-xl text-ink group-hover:text-petrol">{item.title}</h3>
+          <p class="mt-2 text-sm text-ink-muted">{item.date}</p>
+          <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-petrol">
+            Anhören
+            <span aria-hidden="true" class="transition-transform group-hover:translate-x-0.5">→</span>
+          </span>
+        </a>
+      ))}
+    </div>
+
+    <a
+      href={voice.profileUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-6 inline-block text-sm font-medium text-petrol hover:underline"
+    >
+      {voice.profileLabel} →
+    </a>
+
+    <div class="mt-16 border-t border-sand pt-16">
+      <h3 class="font-serif text-2xl text-ink">{references.title}</h3>
+      <div class="mt-8 grid gap-4 md:grid-cols-3">
+        {references.items.map((item) => (
+          <article class="rounded-xl border border-sand bg-white p-6">
+            <p class="text-xs font-medium uppercase tracking-wider text-ink-muted">{item.type}</p>
+            <h4 class="mt-2 font-medium text-ink">{item.title}</h4>
+            <p class="mt-2 text-sm leading-relaxed text-ink-muted">{item.text}</p>
+            {item.url && item.linkLabel && (
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-4 inline-block text-sm font-medium text-petrol hover:underline"
+              >
+                {item.linkLabel} →
+              </a>
+            )}
+          </article>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+---
+import content from '../content/de.json';
+const { footer } = content;
+---
+
+<footer class="border-t border-sand bg-ink py-12 text-cream">
+  <div class="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-6 sm:flex-row sm:items-center">
+    <div>
+      <p class="font-serif text-lg">{footer.name}</p>
+      <p class="mt-1 text-sm text-cream/70">{footer.tagline}</p>
+    </div>
+    <nav class="flex gap-6 text-sm text-cream/70" aria-label="Rechtliches">
+      <a href={footer.impressum} class="hover:text-cream">Impressum</a>
+      <a href={footer.datenschutz} class="hover:text-cream">Datenschutz</a>
+    </nav>
+  </div>
+</footer>

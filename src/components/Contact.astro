@@ -1,0 +1,129 @@
+---
+import content from '../content/de.json';
+const { contact } = content;
+---
+
+<section id={contact.id} class="border-t border-sand py-20 md:py-28">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="grid gap-12 lg:grid-cols-2">
+      <div>
+        <h2 class="font-serif text-3xl text-ink md:text-4xl">{contact.title}</h2>
+        <p class="mt-4 text-lg text-ink-muted">{contact.subtitle}</p>
+        <div class="mt-8 space-y-3">
+          <a
+            href={`mailto:${contact.email}`}
+            class="block text-lg font-medium text-petrol hover:underline"
+          >
+            {contact.email}
+          </a>
+          <a
+            href={contact.phoneHref}
+            class="block text-lg font-medium text-petrol hover:underline"
+          >
+            {contact.phone}
+          </a>
+        </div>
+      </div>
+
+      <form
+        id="contact-form"
+        class="rounded-2xl border border-sand bg-white p-6 shadow-sm md:p-8"
+      >
+        <div class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-ink">{contact.form.name}</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="mt-1.5 w-full rounded-lg border border-sand bg-cream px-4 py-2.5 text-ink outline-none focus:border-petrol focus:ring-1 focus:ring-petrol"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-ink">{contact.form.email}</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="mt-1.5 w-full rounded-lg border border-sand bg-cream px-4 py-2.5 text-ink outline-none focus:border-petrol focus:ring-1 focus:ring-petrol"
+            />
+          </div>
+          <div>
+            <label for="occasion" class="block text-sm font-medium text-ink">{contact.form.occasion}</label>
+            <select
+              id="occasion"
+              name="occasion"
+              class="mt-1.5 w-full rounded-lg border border-sand bg-cream px-4 py-2.5 text-ink outline-none focus:border-petrol focus:ring-1 focus:ring-petrol"
+            >
+              {contact.form.occasionOptions.map((opt) => (
+                <option value={opt.value}>{opt.label}</option>
+              ))}
+            </select>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label for="date" class="block text-sm font-medium text-ink">{contact.form.date}</label>
+              <input
+                type="text"
+                id="date"
+                name="date"
+                class="mt-1.5 w-full rounded-lg border border-sand bg-cream px-4 py-2.5 text-ink outline-none focus:border-petrol focus:ring-1 focus:ring-petrol"
+              />
+            </div>
+            <div>
+              <label for="location" class="block text-sm font-medium text-ink">{contact.form.location}</label>
+              <input
+                type="text"
+                id="location"
+                name="location"
+                class="mt-1.5 w-full rounded-lg border border-sand bg-cream px-4 py-2.5 text-ink outline-none focus:border-petrol focus:ring-1 focus:ring-petrol"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-ink">{contact.form.message}</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              class="mt-1.5 w-full rounded-lg border border-sand bg-cream px-4 py-2.5 text-ink outline-none focus:border-petrol focus:ring-1 focus:ring-petrol"
+            ></textarea>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="mt-6 w-full rounded-full bg-petrol px-8 py-3.5 font-medium text-cream transition-colors hover:bg-petrol-light sm:w-auto"
+        >
+          {contact.form.submit}
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script define:vars={{ contactEmail: contact.email }}>
+  const form = document.getElementById('contact-form');
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const occasionLabels = {
+      hochzeit: 'Hochzeit / Trauung',
+      trauer: 'Trauerfeier',
+      sonstiges: 'Sonstiges',
+    };
+    const occasion = occasionLabels[data.get('occasion')] || data.get('occasion');
+    const subject = encodeURIComponent(`Anfrage: ${occasion}`);
+    const body = encodeURIComponent(
+      `Name: ${data.get('name')}\n` +
+        `E-Mail: ${data.get('email')}\n` +
+        `Anlass: ${occasion}\n` +
+        `Wunschtermin: ${data.get('date') || '–'}\n` +
+        `Ort: ${data.get('location') || '–'}\n\n` +
+        `${data.get('message')}`
+    );
+    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
+  });
+</script>

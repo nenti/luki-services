@@ -1,0 +1,27 @@
+---
+import content from '../content/de.json';
+---
+
+<header class="fixed inset-x-0 top-0 z-50 border-b border-sand/60 bg-cream/90 backdrop-blur-md">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <a href="/" class="font-serif text-xl font-medium tracking-tight text-ink">
+      Dr. Lukas Hetzelein
+    </a>
+    <nav class="hidden items-center gap-6 md:flex" aria-label="Hauptnavigation">
+      {content.nav.map((item) => (
+        <a
+          href={item.href}
+          class="text-sm text-ink-muted transition-colors hover:text-petrol"
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+    <a
+      href="#kontakt"
+      class="rounded-full bg-petrol px-4 py-2 text-sm font-medium text-cream transition-colors hover:bg-petrol-light"
+    >
+      Anfragen
+    </a>
+  </div>
+</header>

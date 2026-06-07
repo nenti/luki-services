@@ -1,0 +1,38 @@
+---
+import content from '../content/de.json';
+const { about } = content;
+---
+
+<section id={about.id} class="border-t border-sand bg-white py-20 md:py-28">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="grid gap-12 lg:grid-cols-5 lg:gap-16">
+      <div class="lg:col-span-2">
+        <div class="sticky top-28">
+          <img
+            src={about.image}
+            alt={about.imageAlt}
+            class="aspect-[3/4] w-full rounded-2xl object-cover object-[center_15%] shadow-lg"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="lg:col-span-3">
+        <h2 class="font-serif text-3xl text-ink md:text-4xl">{about.title}</h2>
+        <blockquote class="mt-6 border-l-2 border-accent pl-6 font-serif text-xl italic leading-relaxed text-petrol">
+          {about.quote}
+        </blockquote>
+        <div class="mt-8 space-y-5 text-base leading-relaxed text-ink-muted">
+          {about.paragraphs.map((p) => <p>{p}</p>)}
+        </div>
+        <dl class="mt-10 grid gap-4 sm:grid-cols-2">
+          {about.credentials.map((c) => (
+            <div class="rounded-xl border border-sand bg-cream px-5 py-4">
+              <dt class="font-medium text-ink">{c.label}</dt>
+              <dd class="mt-1 text-sm text-ink-muted">{c.detail}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,57 @@
+---
+interface Step {
+  title: string;
+  text: string;
+}
+
+interface Props {
+  id: string;
+  title: string;
+  intro: string;
+  points: string[];
+  steps: Step[];
+  experience?: string;
+  variant?: 'wedding' | 'funeral';
+}
+
+const { id, title, intro, points, steps, experience, variant = 'wedding' } = Astro.props;
+const accentClass = variant === 'wedding' ? 'text-petrol' : 'text-accent';
+---
+
+<section id={id} class:list={['py-20 md:py-28', variant === 'funeral' && 'border-t border-sand bg-white']}>
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="max-w-2xl">
+      <h2 class={`font-serif text-3xl md:text-4xl ${accentClass}`}>{title}</h2>
+      <p class="mt-5 text-lg leading-relaxed text-ink-muted">{intro}</p>
+      {experience && (
+        <p class="mt-4 rounded-xl border border-sand bg-cream px-5 py-4 text-sm leading-relaxed text-ink-muted">
+          {experience}
+        </p>
+      )}
+    </div>
+
+    <ul class="mt-10 grid gap-3 sm:grid-cols-2">
+      {points.map((point) => (
+        <li class="flex gap-3 text-ink-muted">
+          <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span>
+          <span>{point}</span>
+        </li>
+      ))}
+    </ul>
+
+    <div class="mt-14">
+      <h3 class="text-sm font-medium uppercase tracking-[0.15em] text-ink-muted">Ablauf</h3>
+      <ol class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {steps.map((step, i) => (
+          <li class="relative rounded-xl border border-sand bg-cream p-5">
+            <span class="font-serif text-2xl text-sand" aria-hidden="true">
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <h4 class="mt-2 font-medium text-ink">{step.title}</h4>
+            <p class="mt-2 text-sm leading-relaxed text-ink-muted">{step.text}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </div>
+</section>

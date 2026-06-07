@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "Dr. Lukas Hetzelein — Zeremonien & Reden",
+    "description": "Dr. Lukas Hetzelein begleitet Hochzeiten und Trauerfeiern in Berlin und Brandenburg — persönlich, durchdacht, würdevoll.",
+    "url": "https://lukas-hetzelein.de"
+  },
+  "nav": [
+    { "label": "Über mich", "href": "#ueber-mich" },
+    { "label": "Hochzeit", "href": "#hochzeit" },
+    { "label": "Trauer", "href": "#trauer" },
+    { "label": "Stimme", "href": "#stimme" },
+    { "label": "Rahmen", "href": "#rahmenbedingungen" },
+    { "label": "Kontakt", "href": "#kontakt" }
+  ],
+  "hero": {
+    "eyebrow": "Zeremonien & Reden",
+    "title": "Momente, die zu Ihrer Geschichte passen",
+    "subtitle": "Dr. Lukas Hetzelein begleitet Hochzeiten und Trauerfeiern in Berlin und Brandenburg — persönlich, durchdacht, würdevoll.",
+    "cta": "Unverbindlich anfragen",
+    "image": "/images/hero.jpg",
+    "imageAlt": "Dr. Lukas Hetzelein, Porträt"
+  },
+  "about": {
+    "id": "ueber-mich",
+    "title": "Über mich",
+    "quote": "Glauben heißt für mich, mit Karl Rahner „die Unbegreiflichkeit Gottes ein Leben lang aushalten.“",
+    "paragraphs": [
+      "Ich bin Dr. Lukas Hetzelein, promovierter Theologe der LMU München. Meine Dissertation beschäftigte sich mit den Zeichen-Texten im Matthäusevangelium — akademische Arbeit, die meinen Blick geschärft hat für das, was zwischen den Zeilen steht: Bedeutung, Kontext, das Unausgesprochene.",
+      "Das Priesteramt war nicht mein Weg. Stattdessen begleite ich Menschen in den großen Wendepunkten ihres Lebens — nicht als Institution, sondern als Zuhörer und Gestalter. Ob Hochzeit oder Trauerfeier: Ich nehme mir Zeit, Ihre Geschichte zu verstehen, und gestalte daraus eine Zeremonie, die wirklich zu Ihnen passt.",
+      "Als Autor beim RBB („Kirche im RBB“) und Referent im Diözesanrat Berlin bringe ich Erfahrung in Sprache, Öffentlichkeit und sensiblen Gesprächen mit. Ich arbeite sorgfältig, analytisch und mit Respekt vor dem, was für Sie gerade auf dem Spiel steht."
+    ],
+    "credentials": [
+      { "label": "Dr. theol.", "detail": "LMU München" },
+      { "label": "Promotion", "detail": "Zeichen im Matthäusevangelium" },
+      { "label": "RBB-Autor", "detail": "Kirche im RBB" },
+      { "label": "Englisch", "detail": "Verhandlungssicher (C1)" }
+    ],
+    "image": "/images/about.jpg",
+    "imageAlt": "Dr. Lukas Hetzelein"
+  },
+  "services": {
+    "wedding": {
+      "id": "hochzeit",
+      "title": "Hochzeit & freie Trauung",
+      "intro": "Jedes Paar hat eine eigene Geschichte — und verdient eine Zeremonie, die genau dazu passt. Paare jeden Geschlechts sind herzlich willkommen.",
+      "points": [
+        "Individuelle Zeremonie an einem Ort Ihrer Wahl",
+        "Gemeinsame Vorbereitung in persönlichen Gesprächen",
+        "Rituale nach Ihrem Wunsch: Ringe, Gelübde, Musik, Stille",
+        "Als Ergänzung zur standesamtlichen Trauung oder als eigenständige Feier"
+      ],
+      "steps": [
+        { "title": "Anfrage", "text": "Sie schreiben mir — ich melde mich innerhalb weniger Tage." },
+        { "title": "Kennenlernen", "text": "Wir sprechen über Ihre Geschichte, Wünsche und den geplanten Ablauf." },
+        { "title": "Entwurf", "text": "Gemeinsam entsteht der Text und das Ritual Ihrer Zeremonie." },
+        { "title": "Zeremonie", "text": "Am Tag selbst bin ich für Sie da — vorbereitet, präsent, an Ihrer Seite." }
+      ]
+    },
+    "funeral": {
+      "id": "trauer",
+      "title": "Trauer & Abschied",
+      "intro": "Der Verlust eines Menschen lässt oft wenig Raum für Worte. Eine Trauerfeier kann helfen, das Leben des Verstorbenen zu würdigen und gemeinsam Abschied zu nehmen.",
+      "points": [
+        "Persönliche Trauerrede, die das Leben des Verstorbenen würdigt",
+        "Raum für Trauer, Erinnerung und auch für leise Momente",
+        "Begleitung bei der Planung und Gestaltung der Feier",
+        "Offen für kirchliche, weltliche oder gemischte Formate"
+      ],
+      "experience": "Ich habe bereits eine Trauerfeier in Brandenburg begleitet — mit großer Sorgfalt und im engen Austausch mit den Angehörigen.",
+      "steps": [
+        { "title": "Anfrage", "text": "In einer belastenden Situation reagiere ich so schnell wie möglich." },
+        { "title": "Gespräch", "text": "Wir sprechen über den Verstorbenen, die Familie und Ihre Vorstellungen." },
+        { "title": "Vorbereitung", "text": "Gemeinsam entsteht eine Rede und ein Ablauf, der Raum für das Nötige lässt." },
+        { "title": "Trauerfeier", "text": "Ich leite die Zeremonie würdevoll und aufmerksam." }
+      ]
+    }
+  },
+  "voice": {
+    "id": "stimme",
+    "title": "So klingt Lukas",
+    "subtitle": "Radioverkündigungen im RBB — ein Eindruck von Tonfall, Sprache und Haltung.",
+    "items": [
+      {
+        "title": "Berlin vom Wasser aus",
+        "format": "Mein Ort in Berlin",
+        "date": "24.05.2026",
+        "url": "https://www.kirche-im-rbb.de/sendungen/mein-ort-in-berlin/berlin-vom-wasser-aus"
+      },
+      {
+        "title": "Aufbauhelferin vor dem Roten Rathaus",
+        "format": "Mein Ort in Berlin",
+        "date": "08.03.2026",
+        "url": "https://www.kirche-im-rbb.de/sendungen/mein-ort-in-berlin/aufbauhelferin-vor-dem-roten-rathaus"
+      },
+      {
+        "title": "Warschauer Brücke",
+        "format": "Mein Ort in Berlin",
+        "date": "20.12.2025",
+        "url": "https://www.kirche-im-rbb.de/sendungen/mein-ort-in-berlin/warschauer-bruecke"
+      },
+      {
+        "title": "Supermarktkasse",
+        "format": "Worte für den Tag",
+        "date": "04.10.2025",
+        "url": "https://www.kirche-im-rbb.de/sendungen/worte-auf-den-weg-/-worte-fuer-den-tag/supermarktkasse"
+      }
+    ],
+    "profileUrl": "https://www.kirche-im-rbb.de/autorinnen/detail/lukas-hetzelein",
+    "profileLabel": "Alle Beiträge auf kirche-im-rbb.de"
+  },
+  "references": {
+    "title": "Referenzen & Qualifikationen",
+    "items": [
+      {
+        "type": "presse",
+        "title": "Mittelbayerische Zeitung",
+        "text": "Porträt über die Promotion in katholischer Theologie und den eigenen Weg jenseits des Priesteramts.",
+        "url": "https://www.facebook.com/mittelbayerische/posts/dr-lukas-hetzelein-promovierte-in-katholischer-theologie-das-priesteramt-war-nic/10163053674815604/",
+        "linkLabel": "Artikel ansehen"
+      },
+      {
+        "type": "akademisch",
+        "title": "Dissertation (LMU München)",
+        "text": "Zeichen im Matthäusevangelium — eine exegetische Studie, Open Access veröffentlicht.",
+        "url": "https://publishing.ub.uni-muenchen.de/index.php/oplmu/catalog/book/66",
+        "linkLabel": "Publikation"
+      },
+      {
+        "type": "praxis",
+        "title": "Trauerfeier Brandenburg",
+        "text": "Begleitung einer Beerdigung — persönlich vorbereitet, würdevoll durchgeführt.",
+        "url": null,
+        "linkLabel": null
+      }
+    ]
+  },
+  "framework": {
+    "id": "rahmenbedingungen",
+    "title": "Rahmenbedingungen",
+    "subtitle": "Was möglich ist — und was wir im Gespräch klären.",
+    "items": [
+      {
+        "title": "Region",
+        "text": "Schwerpunkt Berlin und Brandenburg. Darüber hinaus nach Absprache."
+      },
+      {
+        "title": "Termine",
+        "text": "Samstage und Sonntage in der Regel möglich. Wochentage nach Vereinbarung."
+      },
+      {
+        "title": "Orte",
+        "text": "Freie Wahl — Natur, Locations, Trauerhallen, private Räume, im Freien."
+      },
+      {
+        "title": "Format",
+        "text": "Christliche Wurzeln, offen für weltliche oder gemischte Zeremonien."
+      },
+      {
+        "title": "Honorar",
+        "text": "Im persönlichen Gespräch klären wir Umfang und Honorar — transparent, ohne versteckte Kosten."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "title": "Kontakt",
+    "subtitle": "Schreiben Sie mir — ich melde mich innerhalb von 2–3 Werktagen.",
+    "email": "lukas.hetzelein@web.de",
+    "phone": "+49 176 70975561",
+    "phoneHref": "tel:+4917670975561",
+    "form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "occasion": "Anlass",
+      "occasionOptions": [
+        { "value": "hochzeit", "label": "Hochzeit / Trauung" },
+        { "value": "trauer", "label": "Trauerfeier" },
+        { "value": "sonstiges", "label": "Sonstiges" }
+      ],
+      "date": "Wunschtermin (optional)",
+      "location": "Ort (optional)",
+      "message": "Ihre Nachricht",
+      "submit": "Nachricht senden"
+    }
+  },
+  "footer": {
+    "name": "Dr. Lukas Hetzelein",
+    "tagline": "Zeremonien & Reden · Berlin",
+    "impressum": "/impressum",
+    "datenschutz": "/datenschutz"
+  },
+  "legal": {
+    "impressum": {
+      "title": "Impressum",
+      "sections": [
+        {
+          "heading": "Angaben gemäß § 5 TMG",
+          "content": "Dr. Lukas Hetzelein\nBerlin\n\nE-Mail: lukas.hetzelein@web.de\nTelefon: +49 176 70975561"
+        },
+        {
+          "heading": "Verantwortlich für den Inhalt",
+          "content": "Dr. Lukas Hetzelein"
+        },
+        {
+          "heading": "Haftungsausschluss",
+          "content": "Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität kann jedoch keine Gewähr übernommen werden."
+        }
+      ]
+    },
+    "datenschutz": {
+      "title": "Datenschutzerklärung",
+      "sections": [
+        {
+          "heading": "Verantwortlicher",
+          "content": "Dr. Lukas Hetzelein\nE-Mail: lukas.hetzelein@web.de"
+        },
+        {
+          "heading": "Kontaktaufnahme",
+          "content": "Wenn Sie per E-Mail oder Telefon Kontakt aufnehmen, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
+        },
+        {
+          "heading": "Hosting",
+          "content": "Diese Website wird auf einem externen Server gehostet. Beim Aufruf der Seite können technische Daten (IP-Adresse, Zeitpunkt, Browsertyp) in Server-Logfiles gespeichert werden. Details werden nach Wahl des Hosting-Anbieters ergänzt."
+        },
+        {
+          "heading": "Externe Links",
+          "content": "Diese Website enthält Links zu externen Seiten (z. B. kirche-im-rbb.de). Für deren Inhalte sind die jeweiligen Betreiber verantwortlich."
+        },
+        {
+          "heading": "Ihre Rechte",
+          "content": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Wenden Sie sich dazu an die oben genannte E-Mail-Adresse."
+        }
+      ]
+    }
+  }
+}

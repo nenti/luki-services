@@ -1,0 +1,7 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+import content from '../content/de.json';
+const { datenschutz } = content.legal;
+---
+
+<LegalPage title={datenschutz.title} sections={datenschutz.sections} />

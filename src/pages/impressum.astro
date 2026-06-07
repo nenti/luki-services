@@ -1,0 +1,7 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+import content from '../content/de.json';
+const { impressum } = content.legal;
+---
+
+<LegalPage title={impressum.title} sections={impressum.sections} />
