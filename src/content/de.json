@@ -1,21 +1,21 @@
 {
   "meta": {
-    "title": "Dr. Lukas Hetzelein — Zeremonien & Reden",
-    "description": "Dr. Lukas Hetzelein begleitet Hochzeiten und Trauerfeiern in Berlin und Brandenburg — persönlich, durchdacht, würdevoll.",
+    "title": "Dr. Lukas Hetzelein — Freier Redner",
+    "description": "Leben.Wenden.Feiern. — Dr. Lukas Hetzelein begleitet Hochzeiten und Trauerfeiern in Berlin und Brandenburg als freier Redner.",
     "url": "https://lukas-hetzelein.de"
   },
   "nav": [
     { "label": "Über mich", "href": "#ueber-mich" },
     { "label": "Hochzeit", "href": "#hochzeit" },
     { "label": "Trauer", "href": "#trauer" },
-    { "label": "Stimme", "href": "#stimme" },
+    { "label": "Referenzen", "href": "#referenzen" },
     { "label": "Rahmen", "href": "#rahmenbedingungen" },
     { "label": "Kontakt", "href": "#kontakt" }
   ],
   "hero": {
-    "eyebrow": "Zeremonien & Reden",
-    "title": "Momente, die zu Ihrer Geschichte passen",
-    "subtitle": "Dr. Lukas Hetzelein begleitet Hochzeiten und Trauerfeiern in Berlin und Brandenburg — persönlich, durchdacht, würdevoll.",
+    "eyebrow": "Leben.Wenden.Feiern.",
+    "title": "Dr. Lukas Hetzelein",
+    "subtitle": "Freier Redner für Hochzeiten und Trauerfeiern in Berlin und Brandenburg — persönlich, durchdacht, würdevoll.",
     "cta": "Unverbindlich anfragen",
     "image": "/images/hero.jpg",
     "imageAlt": "Dr. Lukas Hetzelein, Porträt"
@@ -76,9 +76,9 @@
     }
   },
   "voice": {
-    "id": "stimme",
-    "title": "So klingt Lukas",
-    "subtitle": "Radioverkündigungen im RBB — ein Eindruck von Tonfall, Sprache und Haltung.",
+    "id": "referenzen",
+    "title": "Referenzen & Stimme",
+    "subtitle": "Beiträge bei Kirche im RBB — ein Eindruck von Tonfall, Sprache und Haltung.",
     "items": [
       {
         "title": "Berlin vom Wasser aus",
@@ -105,12 +105,19 @@
         "url": "https://www.kirche-im-rbb.de/sendungen/worte-auf-den-weg-/-worte-fuer-den-tag/supermarktkasse"
       }
     ],
-    "profileUrl": "https://www.kirche-im-rbb.de/autorinnen/detail/lukas-hetzelein",
-    "profileLabel": "Alle Beiträge auf kirche-im-rbb.de"
+    "profileUrl": "https://www.kirche-im-rbb.de/suchen?tx_solr%5Bfilter%5D%5B0%5D=type%3Atx_news_domain_model_news&tx_solr%5Bfilter%5D%5B1%5D=author%3ALukas%20Hetzelein&tx_solr%5Bq%5D=&tx_solr%5Bsort%5D=created%20desc",
+    "profileLabel": "Alle Beiträge bei Kirche im RBB"
   },
   "references": {
-    "title": "Referenzen & Qualifikationen",
+    "title": "Weitere Referenzen",
     "items": [
+      {
+        "type": "rbb",
+        "title": "Kirche im RBB",
+        "text": "Radioverkündigungen und Beiträge von Lukas Hetzelein — chronologisch durchsuchbar.",
+        "url": "https://www.kirche-im-rbb.de/suchen?tx_solr%5Bfilter%5D%5B0%5D=type%3Atx_news_domain_model_news&tx_solr%5Bfilter%5D%5B1%5D=author%3ALukas%20Hetzelein&tx_solr%5Bq%5D=&tx_solr%5Bsort%5D=created%20desc",
+        "linkLabel": "Beiträge durchsuchen"
+      },
       {
         "type": "presse",
         "title": "Mittelbayerische Zeitung",
@@ -188,7 +195,7 @@
   },
   "footer": {
     "name": "Dr. Lukas Hetzelein",
-    "tagline": "Zeremonien & Reden · Berlin",
+    "tagline": "Leben.Wenden.Feiern. · Freier Redner · Berlin",
     "impressum": "/impressum",
     "datenschutz": "/datenschutz"
   },
@@ -198,7 +205,11 @@
       "sections": [
         {
           "heading": "Angaben gemäß § 5 TMG",
-          "content": "Dr. Lukas Hetzelein\nBerlin\n\nE-Mail: lukas.hetzelein@web.de\nTelefon: +49 176 70975561"
+          "content": "Dr. Lukas Hetzelein\nFreier Redner\nBerlin\n\nE-Mail: lukas.hetzelein@web.de\nTelefon: +49 176 70975561"
+        },
+        {
+          "heading": "Umsatzsteuer",
+          "content": "Als Kleinunternehmer im Sinne des § 19 UStG wird keine Umsatzsteuer berechnet."
         },
         {
           "heading": "Verantwortlich für den Inhalt",
