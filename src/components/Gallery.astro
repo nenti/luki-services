@@ -1,0 +1,25 @@
+---
+import content from '../content/de.json';
+const { gallery } = content;
+---
+
+<section id={gallery.id} class="border-t border-sand bg-white py-20 md:py-28">
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="font-serif text-3xl text-ink md:text-4xl">{gallery.title}</h2>
+    <p class="mt-4 max-w-xl text-lg text-ink-muted">{gallery.subtitle}</p>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+      {gallery.items.map((item) => (
+        <figure class="group overflow-hidden rounded-2xl border border-sand bg-cream shadow-sm">
+          <img
+            src={item.image}
+            alt={item.alt}
+            class="aspect-[4/5] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02] md:aspect-[3/4]"
+            loading="lazy"
+          />
+          <figcaption class="px-4 py-3 text-sm text-ink-muted">{item.caption}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>

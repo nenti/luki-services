@@ -17,8 +17,8 @@
     "title": "Dr. Lukas Hetzelein",
     "subtitle": "Freier Redner für Hochzeiten und Trauerfeiern in Berlin und Brandenburg — persönlich, durchdacht, würdevoll.",
     "cta": "Unverbindlich anfragen",
-    "image": "/images/hero.jpg",
-    "imageAlt": "Dr. Lukas Hetzelein, Porträt"
+    "image": "/images/ceremony-wedding-outdoor.jpg",
+    "imageAlt": "Dr. Lukas Hetzelein bei einer Hochzeitszeremonie im Freien"
   },
   "about": {
     "id": "ueber-mich",
@@ -35,8 +35,30 @@
       { "label": "RBB-Autor", "detail": "Kirche im RBB" },
       { "label": "Englisch", "detail": "Verhandlungssicher (C1)" }
     ],
-    "image": "/images/about.jpg",
-    "imageAlt": "Dr. Lukas Hetzelein"
+    "image": "/images/ceremony-church.jpg",
+    "imageAlt": "Dr. Lukas Hetzelein bei einer Zeremonie in einer Kirche"
+  },
+  "gallery": {
+    "id": "eindrucke",
+    "title": "Eindrücke",
+    "subtitle": "Aus echten Zeremonien — so sieht die Begleitung vor Ort aus.",
+    "items": [
+      {
+        "image": "/images/ceremony-church.jpg",
+        "alt": "Dr. Lukas Hetzelein am Rednerpult in einer Kirche",
+        "caption": "Zeremonie in sakraler Umgebung"
+      },
+      {
+        "image": "/images/ceremony-wedding.jpg",
+        "alt": "Dr. Lukas Hetzelein bei einer freien Trauung unter freiem Himmel",
+        "caption": "Freie Trauung im Freien"
+      },
+      {
+        "image": "/images/ceremony-wedding-outdoor.jpg",
+        "alt": "Dr. Lukas Hetzelein leitet eine Hochzeitszeremonie unter einem Zelt",
+        "caption": "Hochzeitsfeier mit Gästen im Freien"
+      }
+    ]
   },
   "services": {
     "wedding": {
