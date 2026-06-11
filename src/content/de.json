@@ -38,28 +38,6 @@
     "image": "/images/ceremony-church.jpg",
     "imageAlt": "Dr. Lukas Hetzelein bei einer Zeremonie in einer Kirche"
   },
-  "gallery": {
-    "id": "eindrucke",
-    "title": "Eindrücke",
-    "subtitle": "Aus echten Zeremonien — so sieht die Begleitung vor Ort aus.",
-    "items": [
-      {
-        "image": "/images/ceremony-church.jpg",
-        "alt": "Dr. Lukas Hetzelein am Rednerpult in einer Kirche",
-        "caption": "Zeremonie in sakraler Umgebung"
-      },
-      {
-        "image": "/images/ceremony-wedding.jpg",
-        "alt": "Dr. Lukas Hetzelein bei einer freien Trauung unter freiem Himmel",
-        "caption": "Freie Trauung im Freien"
-      },
-      {
-        "image": "/images/ceremony-wedding-outdoor.jpg",
-        "alt": "Dr. Lukas Hetzelein leitet eine Hochzeitszeremonie unter einem Zelt",
-        "caption": "Hochzeitsfeier mit Gästen im Freien"
-      }
-    ]
-  },
   "services": {
     "wedding": {
       "id": "hochzeit",
@@ -99,30 +77,18 @@
   },
   "voice": {
     "id": "referenzen",
-    "title": "Referenzen & Stimme",
-    "subtitle": "Beiträge bei Kirche im RBB — ein Eindruck von Tonfall, Sprache und Haltung.",
+    "title": "Stimme & Referenzen",
+    "subtitle": "Ein Eindruck von Tonfall und Haltung — plus Presse und akademische Arbeit.",
     "items": [
       {
         "title": "Berlin vom Wasser aus",
-        "format": "Mein Ort in Berlin",
+        "format": "Kirche im RBB",
         "date": "24.05.2026",
         "url": "https://www.kirche-im-rbb.de/sendungen/mein-ort-in-berlin/berlin-vom-wasser-aus"
       },
       {
-        "title": "Aufbauhelferin vor dem Roten Rathaus",
-        "format": "Mein Ort in Berlin",
-        "date": "08.03.2026",
-        "url": "https://www.kirche-im-rbb.de/sendungen/mein-ort-in-berlin/aufbauhelferin-vor-dem-roten-rathaus"
-      },
-      {
-        "title": "Warschauer Brücke",
-        "format": "Mein Ort in Berlin",
-        "date": "20.12.2025",
-        "url": "https://www.kirche-im-rbb.de/sendungen/mein-ort-in-berlin/warschauer-bruecke"
-      },
-      {
         "title": "Supermarktkasse",
-        "format": "Worte für den Tag",
+        "format": "Kirche im RBB",
         "date": "04.10.2025",
         "url": "https://www.kirche-im-rbb.de/sendungen/worte-auf-den-weg-/-worte-fuer-den-tag/supermarktkasse"
       }
@@ -131,15 +97,8 @@
     "profileLabel": "Alle Beiträge bei Kirche im RBB"
   },
   "references": {
-    "title": "Weitere Referenzen",
+    "title": "Presse & Publikation",
     "items": [
-      {
-        "type": "rbb",
-        "title": "Kirche im RBB",
-        "text": "Radioverkündigungen und Beiträge von Lukas Hetzelein — chronologisch durchsuchbar.",
-        "url": "https://www.kirche-im-rbb.de/suchen?tx_solr%5Bfilter%5D%5B0%5D=type%3Atx_news_domain_model_news&tx_solr%5Bfilter%5D%5B1%5D=author%3ALukas%20Hetzelein&tx_solr%5Bq%5D=&tx_solr%5Bsort%5D=created%20desc",
-        "linkLabel": "Beiträge durchsuchen"
-      },
       {
         "type": "presse",
         "title": "Mittelbayerische Zeitung",
@@ -153,13 +112,6 @@
         "text": "Zeichen im Matthäusevangelium — eine exegetische Studie, Open Access veröffentlicht.",
         "url": "https://publishing.ub.uni-muenchen.de/index.php/oplmu/catalog/book/66",
         "linkLabel": "Publikation"
-      },
-      {
-        "type": "praxis",
-        "title": "Trauerfeier Brandenburg",
-        "text": "Begleitung einer Beerdigung — persönlich vorbereitet, würdevoll durchgeführt.",
-        "url": null,
-        "linkLabel": null
       }
     ]
   },
